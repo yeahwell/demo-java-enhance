@@ -27,7 +27,8 @@ public class MockClient implements Runnable {
 	        for (int i = 0; i < 5; i++) { 
 	            Thread thread = new Thread(new MockClient(i, "hello-service")); 
 	            thread.start();        //同时启动5个客户端请求Master 
-	        } 
+	        }
+	        
 	    }
 	
 }
