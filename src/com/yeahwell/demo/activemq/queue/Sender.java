@@ -1,4 +1,4 @@
-package com.yeahwell.demo.activemq;
+package com.yeahwell.demo.activemq.queue;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
