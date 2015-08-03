@@ -1,4 +1,4 @@
-package com.yeahwell.demo.zookeeper;
+package com.yeahwell.demo.zookeeper.barrier;
 
 import java.util.Arrays;
 

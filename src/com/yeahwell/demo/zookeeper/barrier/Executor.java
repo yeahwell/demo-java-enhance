@@ -1,4 +1,4 @@
-package com.yeahwell.demo.zookeeper;
+package com.yeahwell.demo.zookeeper.barrier;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -9,6 +9,8 @@ import org.apache.zookeeper.KeeperException;
 import org.apache.zookeeper.WatchedEvent;
 import org.apache.zookeeper.Watcher;
 import org.apache.zookeeper.ZooKeeper;
+
+import com.yeahwell.demo.zookeeper.barrier.DataMonitor.DataMonitorListener;
 
 public class Executor implements Watcher, Runnable,
 		DataMonitor.DataMonitorListener {
@@ -51,21 +53,21 @@ public class Executor implements Watcher, Runnable,
 			if (child != null) {
 				System.out.println("Killing process");
 				child.destroy();
-				try {
-					child.waitFor();
-				} catch (InterruptedException e) {
-				}
+//				try {
+//					child.waitFor();
+//				} catch (InterruptedException e) {
+//				}
 			}
 			child = null;
 		} else {
 			if (child != null) {
 				System.out.println("Stopping child");
 				child.destroy();
-				try {
-					child.waitFor();
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+//				try {
+//					child.waitFor();
+//				} catch (InterruptedException e) {
+//					e.printStackTrace();
+//				}
 			}
 			try {
 				FileOutputStream fos = new FileOutputStream(filename);
@@ -74,14 +76,14 @@ public class Executor implements Watcher, Runnable,
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
-			try {
+//			try {
 				System.out.println("Starting child");
-				child = Runtime.getRuntime().exec(exec);
-				new StreamWriter(child.getInputStream(), System.out);
-				new StreamWriter(child.getErrorStream(), System.err);
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+				//child = Runtime.getRuntime().exec(exec);
+				//new StreamWriter(child.getInputStream(), System.out);
+				//new StreamWriter(child.getErrorStream(), System.err);
+//			} catch (IOException e) {
+//				e.printStackTrace();
+//			}
 		}
 	}
 
