@@ -24,7 +24,7 @@ public class SortTest {
 		System.out.println();
 	}
 	
-	@Test
+//	@Test
 	public void test_bigDataSort(){
 		int size = 20000;
 		for(int i = 1; i <= 5; i++){
@@ -110,4 +110,17 @@ public class SortTest {
 		}
 	}
 	
+	@Test
+	public void test_countSort(){
+		 int test1[] = {2, 6, 4, 3, 2, 3, 4, 6, 3, 4, 3, 5, 2, 6};
+		 int test2[] = {5, 6, 7, 8, 5};
+		 int test3[] = {8, 1, 2, 3, 3, 4};
+		 int test4[] = {3, 4, 3, 2, 1};
+		 int test5[] = {0, 5, 3, 7, 2, 3};
+		 new CountSort().countSort(test1);
+		 new CountSort().countSort(test2);
+		 new CountSort().countSort(test3);
+		 new CountSort().countSort(test4);
+		 new CountSort().countSort(test5);
+	}
 }
