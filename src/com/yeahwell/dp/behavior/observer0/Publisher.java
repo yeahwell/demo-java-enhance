@@ -1,4 +1,4 @@
-package com.yeahwell.dp.behavior.observer.before;
+package com.yeahwell.dp.behavior.observer0;
 
 /**
  *连锁店的消息发布者
