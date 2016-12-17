@@ -1,4 +1,4 @@
-package com.yeahwell.demo.akka;
+package com.yeahwell.demo.akka.demo02;
 
 import akka.actor.ActorRef;
 //import static akka.actor.Actors.remote;
