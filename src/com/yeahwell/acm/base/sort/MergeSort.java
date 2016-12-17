@@ -23,7 +23,7 @@ public class MergeSort {
 	}
 
 	/**
-	 * 数组的亮亮合并操作
+	 * 数组的两两合并操作
 	 * @param array 待排序数组
 	 * @param temparray 临时数组
 	 * @param left 第一个区间段的开始位置

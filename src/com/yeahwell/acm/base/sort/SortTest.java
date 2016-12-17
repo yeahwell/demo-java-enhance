@@ -24,7 +24,7 @@ public class SortTest {
 		System.out.println();
 	}
 	
-//	@Test
+	@Test
 	public void test_bigDataSort(){
 		int size = 20000;
 		for(int i = 1; i <= 5; i++){

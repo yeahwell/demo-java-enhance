@@ -52,7 +52,7 @@ public class ZookeeperEventContainer implements Watcher {
 
     public ZooKeeper createZooKeeper() throws IOException, InterruptedException {
         log.debug("about to create zookeeper");
-        ZooKeeper newZooKeeper = new ZooKeeper("172.16.53.137:4181", SESSION_TIMEOUT, this);
+        ZooKeeper newZooKeeper = new ZooKeeper("121.42.37.39:2181", SESSION_TIMEOUT, this);
         countDownLatch = new CountDownLatch(1);
         countDownLatch.await(SESSION_TIMEOUT, TimeUnit.MILLISECONDS);
         log.debug("connection establed, session id:" + newZooKeeper.getSessionId());
@@ -64,11 +64,11 @@ public class ZookeeperEventContainer implements Watcher {
         //更新数据并注册watcher
         try {
             // 监听根节点数据变更、创建、删除
-            this.zk.getData("/mbp/dev", true, null);
+            this.zk.getData("/fis/dev", true, null);
             // 监听子节点数据更新、创建、删除
-            List<String> children = this.zk.getChildren("/mbp/dev", true);
+            List<String> children = this.zk.getChildren("/fis/dev", true);
             for (String child : children) {
-                byte[] data = this.zk.getData("/mpb/dev/" + child, true, null);
+                byte[] data = this.zk.getData("/fis/dev/" + child, true, null);
                 System.out.println("更改后的数据" + new String(data));
             }
         } catch (KeeperException e) {
@@ -151,7 +151,7 @@ public class ZookeeperEventContainer implements Watcher {
 
         // 关闭连接、测试session disconnected
         try {
-            ZooKeeper oldZooKeeper = new ZooKeeper("172.16.53.137:4181", 10000, null, container.getZooKeeper().getSessionId(), null);
+            ZooKeeper oldZooKeeper = new ZooKeeper("121.42.37.39:2181", 10000, null, container.getZooKeeper().getSessionId(), null);
             log.debug("close old zookeeper:" + oldZooKeeper.getSessionId());
             oldZooKeeper.close();
         } catch (InterruptedException e) {
