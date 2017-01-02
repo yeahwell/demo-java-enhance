@@ -1,4 +1,4 @@
-package com.yeahwell.demo.hashmap;
+package com.yeahwell.demo.j2se.core.collect.hashmap;
 
 import java.util.HashMap;
 import java.util.Iterator;

@@ -1,4 +1,4 @@
-package com.yeahwell.demo.io;
+package com.yeahwell.demo.j2se.core.io.read;
 
 import java.io.File;
 import java.io.FileInputStream;

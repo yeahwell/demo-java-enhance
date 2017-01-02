@@ -1,4 +1,4 @@
-package com.yeahwell.demo.serialize;
+package com.yeahwell.demo.j2se.core.serialize;
 
 import java.io.File;
 import java.io.FileInputStream;

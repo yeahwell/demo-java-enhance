@@ -12,7 +12,7 @@ import org.apache.zookeeper.data.Stat;
 
 public class Barrier implements Watcher {
 
-    private static final String addr = "172.16.53.137:4181";
+    private static final String addr = "121.42.37.39:2181";
     private ZooKeeper           zk   = null;
     private Integer             mutex;
     private int                 size = 0;

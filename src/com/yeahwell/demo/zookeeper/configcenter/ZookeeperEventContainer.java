@@ -64,11 +64,11 @@ public class ZookeeperEventContainer implements Watcher {
         //更新数据并注册watcher
         try {
             // 监听根节点数据变更、创建、删除
-            this.zk.getData("/fis/dev", true, null);
+            this.zk.getData("/dev/fis", true, null);
             // 监听子节点数据更新、创建、删除
-            List<String> children = this.zk.getChildren("/fis/dev", true);
+            List<String> children = this.zk.getChildren("/dev/fis", true);
             for (String child : children) {
-                byte[] data = this.zk.getData("/fis/dev/" + child, true, null);
+                byte[] data = this.zk.getData("/dev/fis/" + child, true, null);
                 System.out.println("更改后的数据" + new String(data));
             }
         } catch (KeeperException e) {
@@ -143,22 +143,23 @@ public class ZookeeperEventContainer implements Watcher {
 
         log.debug("container start");
 
-        try {
-            Thread.sleep(5000L);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-
-        // 关闭连接、测试session disconnected
-        try {
-            ZooKeeper oldZooKeeper = new ZooKeeper("121.42.37.39:2181", 10000, null, container.getZooKeeper().getSessionId(), null);
-            log.debug("close old zookeeper:" + oldZooKeeper.getSessionId());
-            oldZooKeeper.close();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(5000L);
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        }
+//
+//        // 关闭连接、测试session disconnected
+//        try {
+//            ZooKeeper oldZooKeeper = new ZooKeeper("121.42.37.39:2181", 10000, null, container.getZooKeeper().getSessionId(), null);
+//            log.debug("close old zookeeper:" + oldZooKeeper.getSessionId());
+//            oldZooKeeper.close();
+//        } catch (InterruptedException e) {
+//            e.printStackTrace();
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+        
         while (true);
     }
 }

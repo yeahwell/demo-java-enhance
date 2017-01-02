@@ -1,4 +1,4 @@
-package com.yeahwell.demo.serialize;
+package com.yeahwell.demo.j2se.core.serialize;
 
 import static org.junit.Assert.assertEquals;
 
