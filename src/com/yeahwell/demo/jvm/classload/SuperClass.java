@@ -1,7 +1,7 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.classload;
 
 /**
- * 被动使用类字段演示一：
+ * <h5>被动引用的例子</h5>
  * 通过子类引用父类的静态字段，不会导致子类初始化
  * @author yeahwell
  *

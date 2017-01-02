@@ -1,4 +1,4 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.classload;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -38,6 +38,7 @@ public class DynamicProxyTest {
 	}
 	
 	public static void main(String[] args) {
+		//加入这句代码后再次运行程序，磁盘中将会产生一个名为$Proxy0.class的代理类Class文件
 		System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
 		IHello hello = (IHello) new DynamicProxy().bind(new Hello());
 		hello.sayHello();

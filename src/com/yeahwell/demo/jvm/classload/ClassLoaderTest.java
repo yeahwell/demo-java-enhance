@@ -1,4 +1,4 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.classload;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -38,7 +38,7 @@ public class ClassLoaderTest {
 		 * 虚拟机中存在了两个ClassLoaderTest类，一个是由系统应用程序类加载器加载的，另外一个是由我们自定义的类加载器加载的，
 		 * 虽然都来自同一个Class文件，但依然是两个独立的类，做对象所属类型检查时结果自然为false
 		 */
-		System.out.println(obj instanceof com.yeahwell.demo.jvm.ClassLoaderTest);
+		System.out.println(obj instanceof com.yeahwell.demo.jvm.classload.ClassLoaderTest);
 		
 	}
 	

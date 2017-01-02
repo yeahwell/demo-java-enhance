@@ -1,4 +1,4 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.case03;
 
 public class ByteUtils {
 

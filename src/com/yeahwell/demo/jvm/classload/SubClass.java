@@ -1,4 +1,5 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.classload;
+
 
 /**
  * 

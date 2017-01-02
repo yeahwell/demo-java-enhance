@@ -1,7 +1,17 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.case03;
 
 import java.lang.reflect.Method;
 
+/**
+ * 自己动手实现远程执行功能
+ * <ul>
+ * <li>如何编译提交到服务器的Java代码</li>
+ * <li>如何执行编译之后的Java代码</li>
+ * <li>如何收集Java代码的执行结果</li>
+ * </ul>
+ * @author yeahwell
+ *
+ */
 public class JavaClassExecuter {
 
 	public static String execute(byte[] classByte){

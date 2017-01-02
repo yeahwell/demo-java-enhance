@@ -1,4 +1,4 @@
-package com.yeahwell.demo.jvm;
+package com.yeahwell.demo.jvm.case03;
 
 /**
  * 为了多次载入执行类而加入的加载器
