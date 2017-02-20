@@ -2,7 +2,8 @@ package com.yeahwell.demo.thread.syn;
 
 /**
  * 
-ava语言包含两种内在的同步机制：同步块（或方法）和 volatile 变量。这两种机制的提出都是为了实现代码线程的安全性。其中 Volatile 变量的同步性较差（但有时它更简单并且开销更低），而且其使用也更容易出错。
+ava语言包含两种内在的同步机制：同步块（或方法）和 volatile 变量。这两种机制的提出都是为了实现代码线程的安全性。
+其中 Volatile 变量的同步性较差（但有时它更简单并且开销更低），而且其使用也更容易出错。
 
 public volatile boolean exit = false;
 在定义exit时，使用了一个Java关键字volatile，这个关键字的目的是使exit同步，也就是说在同一时刻只能由一个线程来修改exit的值.

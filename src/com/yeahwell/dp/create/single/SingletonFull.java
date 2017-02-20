@@ -10,6 +10,7 @@ public class SingletonFull {
 	// 静态工厂方法
 	public static synchronized SingletonFull getInstance() {
 		synchronized (SingletonFull.class) {   
+			// 2、双重检查锁定
 			if (single == null) {
 				single = new SingletonFull();
 			}

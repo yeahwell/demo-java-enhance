@@ -40,7 +40,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //        return config;
 //    }
 //	
-//    @Test
+//    @TestNameList
 //    public void test_CompareSerializeLength() throws Exception {
 //        long[] data = new long[] { -1l, 2l, 3l, 4l, 5l };
 //        ByteArrayOutputStream os;
@@ -71,7 +71,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + ":" + os.size());
 //    }
 //    
-//    @Test
+//    @TestNameList
 //    public void testBuilderPerm() throws Exception {
 //        Builder<Bean> bb = Builder.register(Bean.class);
 //        Bean bean = new Bean();
@@ -92,7 +92,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testH2oPerm() throws Exception {
 //        Bean bean = new Bean();
 //        int len = 0;
@@ -113,7 +113,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testJavaOutputPerm() throws Exception {
 //        Bean bean = new Bean();
 //        int len = 0;
@@ -133,7 +133,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testCompactedJavaOutputPerm() throws Exception {
 //        Bean bean = new Bean();
 //        int len = 0;
@@ -154,7 +154,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testBuilderPerm1() throws Exception {
 // 
 //        Builder<ReportPrint> bb = Builder.register(ReportPrint.class);
@@ -179,7 +179,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testH2oPerm1() throws Exception {
 //        ReportPrint bean = this.getReportPrint();
 // 
@@ -201,7 +201,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testJavaOutputPerm1() throws Exception {
 //        ReportPrint bean = this.getReportPrint();
 // 
@@ -222,7 +222,7 @@ import com.alibaba.dubbo.common.serialize.support.java.CompactedObjectOutputStre
 //                + (System.currentTimeMillis() - now) + "ms, size " + len);
 //    }
 // 
-//    @Test
+//    @TestNameList
 //    public void testCompactedJavaOutputPerm1() throws Exception {
 //        ReportPrint bean = this.getReportPrint();
 // 

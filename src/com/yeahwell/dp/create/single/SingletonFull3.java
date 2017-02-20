@@ -17,5 +17,9 @@ public class SingletonFull3 {
 	public static final SingletonFull3 getInstance() {
 		return LazyHolder.INSTANCE;
 	}
+	
+	public static void main(String[] args) {
+		SingletonFull3.getInstance();
+	}
 
 }

@@ -20,7 +20,7 @@ public class DynamicCompilerMain {
 
 		// 待编译的源码
 		StringBuilder src = new StringBuilder();
-		src.append("package name.ylk;public class Test {\n");
+		src.append("package name.ylk;public class TestNameList {\n");
 		src.append("    public String toString() {\n");
 		src.append("        return \"Hello, I am www.ylk.name \"; ");
 		src.append("    }\n");

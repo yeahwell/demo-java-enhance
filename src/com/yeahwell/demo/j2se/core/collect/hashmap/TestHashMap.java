@@ -1,8 +1,13 @@
 package com.yeahwell.demo.j2se.core.collect.hashmap;
 
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Hashtable;
 import java.util.Iterator;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeSet;
+import java.util.Vector;
 
 public class TestHashMap {
 
@@ -19,6 +24,8 @@ public class TestHashMap {
 		    Object val = entry.getValue();
 		    System.out.println("key=" + key + ",value=" + val);
 		}
+		String a = null;
+		
 	}
 	
 }

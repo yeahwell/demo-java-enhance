@@ -5,7 +5,9 @@ package com.yeahwell.demo.thread.dispatch;
  * 
  */
 public class ThreadJoin {
+	
     public static void main(String[] args) {
+    	
         ThreadJoin join = new ThreadJoin();
         Thread t1 = join.new MyThread1();
         t1.start();
@@ -25,7 +27,7 @@ public class ThreadJoin {
     class MyThread1 extends Thread {
         public void run() {
             for (int i = 0; i < 10; i++) {
-                System.out.println("线程1第" + i + "次执行！");
+                System.out.println("======线程1第" + i + "次执行！");
             }
         }
     }
