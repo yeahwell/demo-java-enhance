@@ -5,7 +5,13 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+/**
+ * http://www.cnblogs.com/dmir/p/4907515.html
+ * @author yeahwell
+ *
+ */
 public class ConcurrentLinkedQueueTest {
+	
     private static ConcurrentLinkedQueue<Integer> queue = new ConcurrentLinkedQueue<Integer>();
     private static int count = 2; // 线程个数
     //CountDownLatch，一个同步辅助类，在完成一组正在其他线程中执行的操作之前，它允许一个或多个线程一直等待。
