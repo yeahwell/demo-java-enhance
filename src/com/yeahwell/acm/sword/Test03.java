@@ -1,5 +1,14 @@
 package com.yeahwell.acm.sword;
 
+/**
+ * <a href="http://blog.csdn.net/derrantcm/article/details/45330789">http://blog.csdn.net/derrantcm/article/details/45330789</a>
+ * <h5>【面试题3 ：二维数组中的查找】</h5>
+ * 题目：
+ * <p>在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。</p>
+ * <p>请完成一个函数，输入这样的一个二维数组和一个整数，判断数组中是否含有该整数。</p>
+ * @author yeahwell
+ *
+ */
 public class Test03 {
     /**
      * 在一个二维数组中，每一行都按照从左到右递增的顺序排序，每一列都按照从上到下递增的顺序排序。

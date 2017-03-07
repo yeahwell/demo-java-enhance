@@ -3,6 +3,8 @@ package com.yeahwell.acm.sword;
 /**
  * http://blog.csdn.net/derrantcm/article/details/45476095
  * 【面试题9 ： 斐波那契数列】
+ * O（n）时间O（1）空间实现
+ * 0 1 1 2 3 5 8 13 21
  * @author yeahwell
  *
  */

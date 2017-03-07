@@ -41,7 +41,7 @@ public class Test13 {
 
         // 在多个节点的情况下，如果删除的是最后一个元素
         if (toBeDeleted.next == null) {
-            // 找待删除元素的前驱
+            // 找待删除元素的前驱，即找到待删除节点的前一个节点
             ListNode tmp = head;
             while (tmp.next != toBeDeleted) {
                 tmp = tmp.next;

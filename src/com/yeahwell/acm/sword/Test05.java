@@ -2,6 +2,12 @@ package com.yeahwell.acm.sword;
 
 import java.util.Stack;
 
+/**
+ * http://blog.csdn.net/derrantcm/article/details/45330821
+ * 题目：输入个链表的头结点，从尾到头反过来打印出每个结点的值。
+ * @author yeahwell
+ *
+ */
 public class Test05 {
 	
     /**
@@ -19,7 +25,7 @@ public class Test05 {
      * @param root 链表头结点
      */
     public static void printListInverselyUsingIteration(ListNode root) {
-        Stack<ListNode> stack = new Stack<>();
+        Stack<ListNode> stack = new Stack<ListNode>();
         while (root != null) {
             stack.push(root);
             root = root.nxt;
@@ -33,7 +39,7 @@ public class Test05 {
 
     /**
      * 输入个链表的头结点，从尾到头反过来打印出每个结点的值
-     * 使用栈的方式进行
+     * 使用递归的方式
      *
      * @param root 链表头结点
      */
